@@ -6,16 +6,12 @@ class Restaurant {
 
 }
 class Menu {
-    constructor({type}){
+    constructor({type = "Wines Menu"}){
         this.type = type
-        this.items = []
     }
 }
 
 module.exports = {
     Restaurant,
-    Menu, 
-    Items,
-    People,
-    Price
+    Menu
 }
