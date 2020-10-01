@@ -15,3 +15,4 @@ describe("menu", () => {
         expect(menu.type).toBe("Wine Menu")
     })
 })
+
