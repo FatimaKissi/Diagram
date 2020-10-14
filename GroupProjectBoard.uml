@@ -1,0 +1,33 @@
+@startuml
+class Project{
+title: STRING
+description: STRING
+deadline: DATE
+tasks: ARRAY<task>
+}
+
+class User{
+name: STRING
+avatar: IMAGE URL
+}
+
+class Task{
+description: STRING
+status: INTEGER
+deadline: DATE
+}
+
+Class Model{
+create()
+destroy()
+findByPk()
+findAll()
+}
+
+Model <-- Project
+Model <-- User
+Model <-- Task
+Project --{ Task
+User --{ Task
+Project }-{ User
+@enduml
